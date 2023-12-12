@@ -21,7 +21,8 @@ Route::get('/hello-world',function (){
     return "IM THE LARAVEL MASTER";
 });
 
-Route::get('/hello/user/{id}',function ($id) {
+Route::get('/hello/user/{id}/{username}',function ($id) {
     return "hello user $id ";
 });
 
+im handsome
