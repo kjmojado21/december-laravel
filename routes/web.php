@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,10 @@ Route::get('/hello-world',function (){
     return "IM THE LARAVEL MASTER";
 });
 
-Route::get('/hello/user/{id}/{username}',function ($id) {
-    return "hello user $id ";
+Route::get('/hello/user/{id}/{username}',function ($id, $username) {
+    return "hello user $id <br> username: $username";
 });
+
+// using methods from postController
+Route::get('/index',[PostController::class,'index']);
 
