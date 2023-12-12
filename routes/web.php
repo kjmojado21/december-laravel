@@ -25,4 +25,3 @@ Route::get('/hello/user/{id}/{username}',function ($id) {
     return "hello user $id ";
 });
 
-im handsome
