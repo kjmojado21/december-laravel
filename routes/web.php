@@ -34,3 +34,8 @@ Route::get('/post/{id}/{username}',[PostController::class,'viewPost']);
 Route::get('/viewAllPosts',[PostController::class,'viewAllPosts']);
 Route::get('/viewUserPost/{id}/{username}',[PostController::class,'viewUserPost']);
 
+// model + controller + route
+Route::get('/store',[PostController::class,'store']);
+Route::get('/display',[PostController::class,'display']);
+Route::get('/oneData/{id}',[PostController::class,'oneData']);
+
